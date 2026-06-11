@@ -3,9 +3,22 @@ padding: 0;
 margin: 0;
 box-sizing: border-box;
 }
+
+:root{
+    --text-color-primario: #333;
+    --color-primario: #BDEDE0;
+    --color-secundario: #bdd821;
+    --fuente-titulos: 'Lucida Sans', sans-serif;
+    --altura-header: 320px;
+ }
 .Degradado{
     background: linear-gradient(135deg, var(--color-primario), var(--color-secundario));
 }
+.cuadrado-boton{
+    height:50px;
+    width: 50px;
+    background-color: #000000
+    }
 .Bienvenida{
     position:absolute;
     left: 10%;
@@ -21,21 +34,23 @@ box-sizing: border-box;
     height: 50px;
     width: 80%;
     background-color: white;
-    
+    display: flex;
+    justify-content: space-between;
+
 }
-:root{
-    --text-color-primario: #333;
-    --color-primario: #BDEDE0;
-    --color-secundario: #AFE9DA;
-    --fuente-titulos: 'Lucida Sans', sans-serif;
-    --altura-header: 320px;
- }
+.centrar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+    
 header{
     height: var(--altura-header);
     background-color: var(--color-primario);
     position:relative;
 }
 main{
+    padding-top: 50px;
     min-height: calc(100vh - var(--altura-header));
     background-color: var(--color-secundario);
 }
