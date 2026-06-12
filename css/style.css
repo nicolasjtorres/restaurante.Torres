@@ -2,18 +2,26 @@
 padding: 0;
 margin: 0;
 box-sizing: border-box;
+text-decoration: none;
 }
 
 :root{
     --text-color-primario: #333;
-    --color-primario: #BDEDE0;
-    --color-secundario: #bdd821;
+    --color-primario: #195190;
+    --color-secundario: #A2A2A1;
     --fuente-titulos: 'Lucida Sans', sans-serif;
     --altura-header: 320px;
  }
+ .btn-blanco{
+    background-color: white!important;
+    color:var(--color-primario);
+    
+ }
 .Degradado{
-    background: linear-gradient(135deg, var(--color-primario), var(--color-secundario));
+       background: linear-gradient(135deg, var(--color-primario), var(--color-secundario));
 }
+
+
 .cuadrado-boton{
     height:50px;
     width: 50px;
@@ -38,12 +46,59 @@ box-sizing: border-box;
     justify-content: space-between;
 
 }
+.Buscador input[type="text"]{
+    width: 100%;
+    outline: none;
+    border: none;
+}
 .centrar{
     display: flex;
     justify-content: center;
     align-items: center;
 }
+  
+.categorias{
+    /*height: 100px;*/padding: 2em 0;
+    display: flex;
+    gap: 2em;
+    align-items: center;
+    justify-content: center;
+    overflow: auto;
+}
+
+.item-categoria{
+    flex: 0 0 150px;
+    height: 150px; display: flex;
+    min-width: 80px; display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.5em;
+    padding: .5em;
+    color: var(--color-primario);
+    transition: all .25s ease-out;
+        display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:.5em
     
+
+
+}
+
+.item-categoria .fa{font-size: 2em;}
+
+.item-categoria:hover{
+    background-color: #4b6583;
+    box-shadow: 0 6px 26px -3px rgba(0,0,0,0.5);
+    color: white;
+    transform: scale(1.05);
+    cursor: pointer;
+    border-radius: 3em;
+
+}
+
+
+
 header{
     height: var(--altura-header);
     background-color: var(--color-primario);
