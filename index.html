@@ -1,70 +1,53 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=devide-width, init">
-    <title>Document</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" /&gt;>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio - Restaurante</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
-    <section class="container">
-        <header>
-            <div class="Degradado"></div>
-            <div class="Bienvenida">
-                <h3>Bienvenido a nuestro restaurante</h3>
-                <h6>Disfruta de nuestra deliciosa comida</h6>
-            </div>
-            <div class="Buscador">
-                <i class="cuadrado-boton fa-solid fa-location-dot centrar" style="color: rgb(255, 255, 255)"></i>
-                <input type="text" placeholder="Busca tu restaurante favorito">
-                <button class="cuadrado-boton btn-blanco"><i class="fas fa-search"></i></button>
-            </div>
+    <section class="telefono inicio">
+        <header class="portada">
+            <div class="oscuro"></div>
+            <div class="bienvenida">
+                <h2>Good afternoon, John</h2>
+                <p>It's time for lunch.</p>
             </div>
 
+            <div class="buscador">
+                <div class="ubicacion"><i class="fa-solid fa-location-dot"></i></div>
+                <input type="text" placeholder="Search Restaurant">
+                <button><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
         </header>
 
-        <main>
+        <main class="contenido-inicio">
             <nav class="categorias">
-                <a class="item-categoria" href="#">
-                    <i class="fa fa-pizza-slice"></i>
-                    <span>Pizza</span>
-                </a>
-                <a class="item-categoria" href="#">
-                    <i class="fa fa-burger"></i>
-                    <span>Burger</span>
-                </a>
-                <a class="item-categoria" href="#">
-                    <i class="fa fa-coffee"></i>
-                    <span>Cafe</span>
-                </a>
-                <a class="item-categoria" href="#">
-                    <i class="fa fa-ice-cream"></i>
-                    <span>Helado</span>
-                </a>
-                                <a class="item-categoria" href="#">
-                    <i class="fa fa-bacon"></i>
-                    <span>Carne</span>
-                </a>
-                                <a class="item-categoria" href="#">
-                    <i class="fa fa-bread-slice"></i>
-                    <span>Pan</span>
-                </a>
-                                <a class="item-categoria" href="#">
-                    <i class="fa fa-fish"></i>
-                    <span>Sushi</span>
-                </a>
-
-
-
+                <a href="#"><i class="fa-solid fa-bowl-food"></i><span>CHINESE</span></a>
+                <a href="#"><i class="fa-solid fa-bell-concierge"></i><span>TACOS</span></a>
+                <a href="#"><i class="fa-solid fa-burger"></i><span>BURGER</span></a>
+                <a href="#"><i class="fa-solid fa-cookie"></i><span>DONUT</span></a>
             </nav>
 
+            <h3 class="subtitulo">OFFERS</h3>
 
-
+            <a class="tarjeta-oferta" href="detalle.html">
+                <div class="foto-oferta">
+                    <img src="img/oferta.jpg" alt="Restaurante Gran Mahakam">
+                    <span>1.3 km</span>
+                </div>
+                <div class="info-oferta">
+                    <h3>Gran Mahakam</h3>
+                    <p>Asian, Chinese 15 min</p>
+                    <p>9:00-11:00</p>
+                    <div class="estrellas">★★★★★ <small>(72)</small></div>
+                </div>
+                <div class="nota">4.8</div>
+                <div class="precio">€ € €</div>
+            </a>
         </main>
     </section>
 </body>
-
 </html>
